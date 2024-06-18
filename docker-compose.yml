@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  chatter_db:
+    image: postgres:16.1-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: 'todo'
+      POSTGRES_PASSWORD: 'todo_pass'
+      POSTGRES_DB: 'todo_db'
+    ports:
+      - '2000:5432'
