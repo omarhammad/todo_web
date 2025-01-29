@@ -125,31 +125,28 @@ To use the Todo Web Application, follow these steps:
 
 ## Deployment
 
-- **Compute Engine Setup**
+- **Compute Engine**
   - Provision a Google Cloud VM to host the application and database.
-  - Install Docker, apply security updates, and configure firewall rules for HTTP, HTTPS, and database access.
+  - Install Docker, apply security updates, and configure firewall rules.
 
-- **Cloud SQL Database**
-  - Create a PostgreSQL instance and set up the database and user.
-  - Authorize the VM for secure access and initialize the schema with the required SQL script.
+- **Cloud SQL**
+  - Create a PostgreSQL instance with a database and user.
+  - Authorize the VM and initialize the schema.
 
 - **Cloud Storage**
-  - Set up a storage bucket for static files.
-  - Configure public access where needed.
+  - Create a storage bucket for static files with public access if needed.
 
-- **VPC Network Configuration**
-  - Create a dedicated VPC with a custom subnet.
-  - Apply firewall rules to allow necessary traffic and ensure secure communication between the VM and database.
+- **VPC Networking**
+  - Set up a dedicated VPC with a custom subnet.
+  - Apply firewall rules for secure communication.
 
-- **Domain & DNS Setup**
-  - Register a domain and configure Cloud DNS to link it to the VM.
-  - Update the domain provider with Google Cloud’s nameservers.
+- **Domain & DNS**
+  - Register a domain and configure Cloud DNS.
+  - Update nameservers in the domain provider.
 
-- **Application Orchestration & Deployment**
-  - Utilize **Docker Compose** to orchestrate application and database containers.
-  - Ensure SSL/TLS certificates are in place.
-  - Build and push the application’s Docker image.
-  - Configure Cloud SQL proxy for secure database access.
-  - Deploy the application with **containerized orchestration**.
+- **Application Deployment**
+  - Use **Docker Compose** for container orchestration.
+  - Set up SSL/TLS certificates and Cloud SQL proxy.
+  - Build, push, and deploy the application.
 
 --------
