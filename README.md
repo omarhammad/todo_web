@@ -74,7 +74,6 @@ The Todo Web Application is a web application that allows users to create, edit,
 - **GET `/todos/delete-todo/{todo_id}`** → Deletes a todo.
 
 ## Testing
-- **Unit Tests**: Run `pytest tests/` to execute test cases.
 - **API Testing**: Use tools like Postman or Curl to interact with the API.
 
 ## Security and Authentication
